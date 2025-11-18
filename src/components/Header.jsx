@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <>
-      <header className="w-full h-auto bg-blue-600 flex justify-between border-2 border bg-amber-700">
+      <header className="w-full h-auto bg-blue-600 flex justify-between" >
 
         {/* Logo */}
-        <div className="w-1/5 border-2 border-amber-400 text-white text-[20px] ml-10">
+        <div className="w-1/5  text-white text-[20px] ml-10">
           <Link to="/">Shahzaib's Collection</Link>
         </div>
 
         {/* Navigation */}
-        <nav className="w-1/2 border-2 border-amber-400">
+        <nav className="w-1/2 ">
           <ul className="h-auto w-full flex justify-evenly">
 
             <li>
@@ -40,7 +40,7 @@ export default function Header() {
         </nav>
 
         {/* Icons Right Side */}
-        <div className="w-1/5 border-4 border-amber-400 flex justify-end items-center mr-10">
+        <div className="w-1/5  flex justify-end items-center mr-10">
           <Link to="/cart">
             <FontAwesomeIcon icon={faCartShopping} className="text-white p-1.5" />
           </Link>
